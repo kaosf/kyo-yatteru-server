@@ -1,5 +1,5 @@
 <ul>
 <% @shops.each do |shop| %>
-  <li><%= shop.name %>: <%= shop.status_id %></li>
+  <li><%= shop.name %>: <%= shop.status.name %></li>
 <% end %>
 </ul>
