@@ -1,6 +1,7 @@
 <ul>
+<%= link_to 'Menu', menu, method: index %>
 <% @shops.each do |shop| %>
-  <li><%= shop.name %>: <%= shop.status.name %></li>
+<li><%= shop.name %>: <%= shop.status.name %></li>
 <% end %>
 
 

@@ -1,6 +1,28 @@
 <h1>Editing shop</h1>
+<%= form_for(@shop) do |f| %>
+    <div class="field">
+      <%= f.hidden_field :status_id, :value => 1 %>
+    </div>
+    <div class="action">
+      <%= f.submit "平常" %>
+    </div>
 
-<%= render 'form' %>
+<% end %>
+<%= form_for(@shop) do |f| %>
+    <div class="field">
+      <%= f.hidden_field :status_id, :value => 2 %>
+    </div>
+    <div class="action">
+      <%= f.submit "混雑" %>
+    </div>
 
-<%= link_to 'Show', @shop %> |
-<%= link_to 'Back', shops_path %>
+<% end %>
+<%= form_for(@shop) do |f| %>
+    <div class="field">
+      <%= f.hidden_field :status_id, :value => 3 %>
+    </div>
+    <div class="action">
+      <%= f.submit "休業" %>
+    </div>
+
+<% end %>
