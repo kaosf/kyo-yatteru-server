@@ -27,7 +27,6 @@ end
 
 group :test, :development do
   gem 'sqlite3'
-  gem 'heroku'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'  #自動テスト
   gem 'capybara', '1.1.2'
