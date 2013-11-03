@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Shop:</b>
+  <%= @relation.shop_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @relation.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_relation_path(@relation) %> |
+<%= link_to 'Back', relations_path %>
