@@ -8,6 +8,8 @@ gem 'rails-i18n' #エラーメッセージ日本語化
 
 gem 'faker','1.0.1' #ダミーのユーザー追加
 
+gem 'devise', '3.1.1' # authentication
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
