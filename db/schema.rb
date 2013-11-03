@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131103035947) do
+ActiveRecord::Schema.define(:version => 20131103055206) do
 
   create_table "relations", :force => true do |t|
     t.integer  "shop_id"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20131103035947) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "shops"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
