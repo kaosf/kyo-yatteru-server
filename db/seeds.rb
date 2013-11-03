@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Status.create([
+  {id: 1, name: '平常'},
+  {id: 2, name: '混雑'},
+  {id: 3, name: '臨時休業'},
+])
