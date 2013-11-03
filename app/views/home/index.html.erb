@@ -1,6 +1,7 @@
 <ul>
 <% @shops.each do |shop| %>
-  <li><%= shop.name %>: <%= shop.status.name %></li>
+    <li><span style="font-size:30px; color:green"> <%= shop.name %>: </span> <span style="font-size:30px; color:<%= if shop.status_id == 2 then 'darkorange' elsif shop.status_id == 3 then 'red' else 'blue' end %> "><%= shop.status.name %> </span></li>
+    <hr>
 <% end %>
 
 
