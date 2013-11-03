@@ -35,6 +35,7 @@ class ShopsController < ApplicationController
   # GET /shops/1/edit
   def edit
     @shop = Shop.find(params[:id])
+    redirect_to '/error' if params[:token] != @shop.token
   end
 
   # POST /shops
