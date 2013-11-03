@@ -60,7 +60,7 @@ class ShopsController < ApplicationController
 
     respond_to do |format|
       if @shop.update_attributes(params[:shop])
-        format.html { redirect_to @shop, notice: 'Shop was successfully updated.' }
+        format.html { redirect_to edit_shop_url(@shop, token: @shop.token) }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
